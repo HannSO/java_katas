@@ -36,10 +36,16 @@ public class TriangleTest {
     }
 
     @Test
-    public void VerticalLinePrintsHorizontalLine (){
+    public void VerticalLinePrintsVerticalLine (){
         triangle.printVerticalLine(4);
         assertEquals("*\n*\n*\n*\n", outputStream.toString());
-
     }
+
+    @Test
+    public void RightAngleTriangleProducesTriangle(){
+        triangle.printRightAngle(3);
+        assertEquals("*\n**\n***\n", outputStream.toString());
+    }
+
 
 }

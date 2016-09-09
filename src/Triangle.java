@@ -19,4 +19,11 @@ public class Triangle {
             System.out.println("*");
         }
     }
+
+    public void printRightAngle(int i){
+        for (int x = 1; x <= i; x++ ) {
+           printHorizontalLine(x);
+            System.out.print("\n");
+        }
+    }
 }
