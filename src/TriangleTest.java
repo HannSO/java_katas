@@ -29,4 +29,17 @@ public class TriangleTest {
         assertEquals("*",outputStream.toString());
     }
 
+    @Test
+    public void printHorizontalLinePrintsHorizontalLine (){
+        triangle.printHorizontalLine(8);
+        assertEquals("********", outputStream.toString());
+    }
+
+    @Test
+    public void VerticalLinePrintsHorizontalLine (){
+        triangle.printVerticalLine(4);
+        assertEquals("*\n*\n*\n*\n", outputStream.toString());
+
+    }
+
 }
