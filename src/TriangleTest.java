@@ -36,7 +36,7 @@ public class TriangleTest {
     }
 
     @Test
-    public void VerticalLinePrintsVerticalLine (){
+    public void PrintVerticalLinePrintsVerticalLine (){
         triangle.printVerticalLine(4);
         assertEquals("*\n*\n*\n*\n", outputStream.toString());
     }
@@ -45,6 +45,12 @@ public class TriangleTest {
     public void RightAngleTriangleProducesTriangle(){
         triangle.printRightAngle(3);
         assertEquals("*\n**\n***\n", outputStream.toString());
+    }
+
+    @Test
+    public void IsoscelesTriagnleProducesSymmetricalTriangle(){
+        triangle.printIsosceles(4);
+        assertEquals("   *\n  ***\n *****\n*******\n", outputStream.toString());
     }
 
 
